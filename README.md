@@ -132,7 +132,7 @@ of the extrapolation time stamp. "
 ```
 ### TOOLS
 ```
-- CIKM_TOOLS.py
+- cikm_tools.py
 "import libs and commonly used functions"
 ```
 
