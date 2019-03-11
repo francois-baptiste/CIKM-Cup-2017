@@ -252,7 +252,7 @@ for set_name, N_slice in zip(set_name_list, N_slice_list):
                 if TH_ind == 0:
                     sample_stat.append((sam_id, ROW_size, COL_size, TIME_MAX, size_all))
                     size_all = size_all + 4 * TIME_MAX * ROW_size * COL_size
-                f = open(output_file, "a")
+                f = open(output_file, "ab")
                 f.write(view_all.tobytes())
                 f.close()
                 #

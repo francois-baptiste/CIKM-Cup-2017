@@ -34,7 +34,7 @@ for set_name, set_size in zip(set_list, size_list):
                 print('too large')
             if data_write.min() < 0:
                 print('too small')
-            f = open(output_file, "a")
+            f = open(output_file, "ab")
             f.write(data_write.tobytes())
             f.close()
 time2 = time.time()

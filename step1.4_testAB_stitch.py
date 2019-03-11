@@ -176,7 +176,7 @@ for sam_id in range(1, 1 + testB_MATCH.SAM_ID.max()):
                         view_all[ROW_SHIFT_A + useful_place[0] + row_id, COL_SHIFT_A + useful_place[1] + col_id] = \
                             data_mat[useful_place]
 
-                f = open(output_file, "a")
+                f = open(output_file, "ab")
                 f.write(view_all.tobytes())
                 f.close()
     else:
@@ -202,7 +202,7 @@ for sam_id in range(1, 1 + testB_MATCH.SAM_ID.max()):
                 if TH_ind == 0:
                     sample_stat.append((0, SAMSB.SAM_ID.values[0], ROW_SIZE, COL_SIZE, TIME_MAX, size_all, 0, 0, 0, 0))
                     size_all = size_all + 4 * TIME_MAX * ROW_SIZE * COL_SIZE
-                f = open(output_file, "a")
+                f = open(output_file, "ab")
                 f.write(view_all.tobytes())
                 f.close()
 sample_stat_pd = pd.DataFrame(sample_stat,

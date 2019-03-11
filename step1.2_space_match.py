@@ -264,7 +264,7 @@ for set_name, N_pic in zip(set_list, size_list):
                 if TH_ind == 0:
                     slice_stat.append((slice_ind, view_all.shape[0], view_all.shape[1], size_all))
                     size_all = size_all + 60 * view_all.shape[0] * view_all.shape[1]
-                f = open(output_file, "a")
+                f = open(output_file, "ab")
                 f.write(view_all.tobytes())
                 f.close()
                 #
